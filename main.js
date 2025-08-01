@@ -25,8 +25,7 @@ document.getElementById("convert").addEventListener("click", async () => {
       if (!res.ok) throw new Error("API no disponible");
       data = await res.json();
     } catch (error) {
-      const fallbackRes = await fetch("Apoyo prueba - Conversor de monedas.json");
-      data = await fallbackRes.json();
+      data = mindicador;
       online = false;
       errorDisplay.textContent = "Se está utilizando información offline.";
     }

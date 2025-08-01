@@ -1,64 +1,75 @@
-
 body {
-  background-color: #1c1e22;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  text-align: center;
   margin: 0;
-  padding: 0;
+  font-family: sans-serif;
+  background-color: #1e1e2f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 }
 
 h1 {
-  margin-top: 40px;
-  font-size: 2em;
-  border-top: 1px solid #e30591;
-  border-bottom: 1px solid #ce0a83;
-  padding: 10px 0;
-  color: #ffffff;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #666;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
 }
 
-.container {
-  background-color: #5c6770;
-  width: 300px;
-  margin: 40px auto;
-  padding: 20px;
-  border-radius: 10px;
+.card {
+  background-color: #2e2e3e;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 300px;
+  width: 100%;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-label, select, input {
+.card label {
+  margin-top: 1rem;
   display: block;
-  margin: 10px auto;
-  width: 80%;
-  font-size: 1em;
+  text-align: left;
 }
 
-input, select {
-  padding: 10px;
+.card input, .card select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
 }
 
-button {
-  background-color: #b70c83;
-  color: #fff;
-  font-weight: bold;
+.card button {
+  background-color: #00aaff;
+  color: white;
+  padding: 0.6rem;
   border: none;
-  border-radius: 5px;
-  padding: 10px;
-  width: 80%;
+  border-radius: 4px;
   cursor: pointer;
+  width: 100%;
 }
 
-button:hover {
-  background-color: #d7c1cd;
+.card button:hover {
+  background-color: #0088cc;
 }
 
 #result {
-  margin-top: 20px;
-  font-size: 1.2em;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #aefbaf;
 }
 
 #error {
-  color: red;
-  margin-top: 10px;
+  color: #ff6b6b;
+  font-size: 0.9rem;
+}
+
+.chart-container {
+  max-width: 600px;
+  width: 100%;
 }
